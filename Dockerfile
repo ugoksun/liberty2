@@ -1,4 +1,4 @@
-FROM default-route-openshift-image-registry.apps.uscp4x.os.fyre.ibm.com/ibtech/websphere-liberty:full
+FROM docker.io/ibmcom/websphere-liberty:latest 
 COPY --chown=1001:0  java-helloworld/target/JavaHelloWorldApp.war /config/dropins/
 COPY --chown=1001:0  server.xml /config/
 
